@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <title>JavaScript - Desarrollo Front-End</title>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>JavaScript - Desarrollo Front-End</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#resumen">Resumen del Módulo 2</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="javascript">
+            <h2>JavaScript</h2>
+            <p>JavaScript es un lenguaje de programación fundamental para el desarrollo web, que permite agregar interactividad y funcionalidades dinámicas a las páginas web. Se usa en el lado del cliente para manipular el DOM, manejar eventos y realizar cálculos, entre otros.</p>
+
+            <h3>Conceptos Clave</h3>
+            <ul>
+                <li><strong>Variables:</strong> Almacenan datos. Los tipos principales son <code>var</code>, <code>let</code> y <code>const</code>.</li>
+                <li><strong>Tipos de Datos:</strong> Incluyen <code>String</code>, <code>Number</code>, <code>Boolean</code>, <code>Object</code>, <code>Array</code>, y <code>Null/Undefined</code>.</li>
+                <li><strong>Operadores:</strong> Se utilizan para realizar operaciones, como <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, y operadores lógicos como <code>&&</code>, <code>||</code>.</li>
+                <li><strong>Funciones:</strong> Bloques de código reutilizables. Se pueden definir usando <code>function</code> o expresiones de función.</li>
+                <li><strong>Eventos:</strong> Son acciones que ocurren en la página, como clics o desplazamientos, que pueden ser manejados usando JavaScript.</li>
+                <li><strong>Manipulación del DOM:</strong> Permite modificar el contenido y estructura de la página web.</li>
+            </ul>
+
+            <h3>Manipulación del DOM</h3>
+            <p>El DOM (Document Object Model) es una interfaz de programación que permite representar y manipular la estructura de documentos HTML y XML. Con JavaScript, podemos acceder y modificar los elementos del DOM.</p>
+
+            <div class="example-container">
+                <h4>Ejemplo de Selección y Modificación de Elementos</h4>
+                <button id="changeTextButton">Cambiar Texto</button>
+                <p id="textParagraph">Este es un párrafo de ejemplo.</p>
+                <pre><code>
+document.querySelector('#changeTextButton').addEventListener('click', function() {
+    const paragraph = document.querySelector('#textParagraph');
+    paragraph.textContent = paragraph.textContent === 'Texto cambiado!' ? 'Este es un párrafo de ejemplo.' : 'Texto cambiado!';
+});
+                </code></pre>
+            </div>
+
+            <div class="example-container">
+                <h4>Crear y Eliminar Elementos</h4>
+                <button id="createElementButton">Crear Elemento</button>
+                <button id="removeElementButton">Eliminar Elemento</button>
+                <div id="elementContainer"></div>
+                <pre><code>
+document.querySelector('#createElementButton').addEventListener('click', function() {
+    const newElement = document.createElement('div');
+    newElement.textContent = 'Soy un nuevo elemento';
+    document.querySelector('#elementContainer').appendChild(newElement);
+});
+
+document.querySelector('#removeElementButton').addEventListener('click', function() {
+    const container = document.querySelector('#elementContainer');
+    if (container.lastChild) {
+        container.removeChild(container.lastChild);
+    }
+});
+                </code></pre>
+            </div>
+
+            <h3>Manejo de Eventos</h3>
+            <p>Los eventos permiten responder a las interacciones del usuario con la página. JavaScript proporciona métodos para manejar estos eventos.</p>
+
+            <div class="example-container">
+                <h4>Ejemplo de Manejo de Eventos</h4>
+                <input type="text" id="textInput" placeholder="Escribe algo aquí...">
+                <div id="output" class="output"></div>
+                <pre><code>
+document.querySelector('#textInput').addEventListener('input', function() {
+    document.querySelector('#output').textContent = 'Texto ingresado: ' + this.value;
+});
+                </code></pre>
+            </div>
+
+            <h3>Recursos Oficiales</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">Documentación de JavaScript en MDN</a></li>
+                <li><a href="https://javascript.info/" target="_blank">JavaScript.info - Tutoriales</a></li>
+                <li><a href="https://www.w3schools.com/js/" target="_blank">Tutorial de JavaScript en W3Schools</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Blog de Desarrollo Front-End. Todos los derechos reservados.AleCanache</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/app3.js"></script>
+</body>
+</html>

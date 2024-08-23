@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <title>CSS - Desarrollo Front-End</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CSS - Desarrollo Front-End</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#resumen">Resumen del Módulo 2</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="css">
+            <h2>CSS (Cascading Style Sheets)</h2>
+            <p>CSS es un lenguaje utilizado para describir la presentación de un documento HTML. Permite controlar el diseño visual de las páginas web, incluyendo colores, fuentes, márgenes, alineación, y mucho más.</p>
+
+            <h3>Box Model (Modelo de Caja)</h3>
+            <p>El Box Model es un concepto fundamental en CSS que describe cómo se construyen los elementos en una página web. Cada elemento se representa como una caja que consta de los siguientes componentes:</p>
+            <ul>
+                <li><strong>Content:</strong> El área donde se muestra el contenido, como texto o imágenes.</li>
+                <li><strong>Padding:</strong> El espacio entre el contenido y el borde de la caja.</li>
+                <li><strong>Border:</strong> El borde que rodea el padding (si está definido) y el contenido.</li>
+                <li><strong>Margin:</strong> El espacio fuera del borde, separando la caja de otros elementos.</li>
+            </ul>
+            <div class="box-model-example">
+                <div class="box-content">Contenido</div>
+            </div>
+
+            <h3>Flexbox</h3>
+            <p>Flexbox es un sistema de diseño en CSS que permite distribuir los elementos en una página de manera eficiente, controlando su alineación, dirección y orden dentro de un contenedor flexible.</p>
+            <ul>
+                <li><strong>Flex Container:</strong> El contenedor que se define con `display: flex;`. Todos los elementos hijos de este contenedor se convierten en flex items.</li>
+                <li><strong>Flex Items:</strong> Los elementos hijos directos del flex container que se distribuyen según las reglas de Flexbox.</li>
+                <li><strong>justify-content:</strong> Alinea los flex items horizontalmente dentro del contenedor.</li>
+                <li><strong>align-items:</strong> Alinea los flex items verticalmente dentro del contenedor.</li>
+                <li><strong>flex-direction:</strong> Define la dirección de los flex items (fila o columna).</li>
+            </ul>
+            <div class="flexbox-example">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+            </div>
+
+            <h3>Recursos Oficiales</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">Documentación de CSS - MDN</a></li>
+                <li><a href="https://www.w3.org/Style/CSS/" target="_blank">Especificación de CSS - W3C</a></li>
+                <li><a href="https://www.w3schools.com/css/" target="_blank">Tutorial de CSS - W3Schools</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Blog de Desarrollo Front-End. Todos los derechos reservados.AleCanache</p>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>

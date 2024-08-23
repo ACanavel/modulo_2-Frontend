@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Git - Desarrollo Front-End</title>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Git - Desarrollo Front-End</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#resumen">Resumen del Módulo 2</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="git">
+            <h2>Git</h2>
+            <p>Git es un sistema de control de versiones distribuido que permite gestionar cambios en el código fuente durante el desarrollo de software. Facilita la colaboración y el seguimiento del historial de cambios.</p>
+
+            <h3>Comandos Básicos</h3>
+            <ul>
+                <li><strong><code>git init</code>:</strong> Inicializa un nuevo repositorio Git.</li>
+                <li><strong><code>git clone [url]</code>:</strong> Clona un repositorio remoto.</li>
+                <li><strong><code>git add [archivo]</code>:</strong> Añade cambios al área de preparación.</li>
+                <li><strong><code>git commit -m "mensaje"</code>:</strong> Crea un nuevo commit con un mensaje descriptivo.</li>
+                <li><strong><code>git push</code>:</strong> Envía los commits al repositorio remoto.</li>
+                <li><strong><code>git pull</code>:</strong> Descarga y fusiona cambios del repositorio remoto.</li>
+            </ul>
+
+            <h3>Ejemplo de Código</h3>
+            <pre><code>
+# Inicializar un nuevo repositorio
+git init
+
+# Clonar un repositorio existente
+git clone https://github.com/usuario/repo.git
+
+# Añadir cambios y hacer commit
+git add archivo.txt
+git commit -m "Mensaje del commit"
+
+# Enviar cambios al repositorio remoto
+git push origin main
+            </code></pre>
+
+            <h3>Recursos Oficiales</h3>
+            <ul>
+                <li><a href="https://git-scm.com/doc" target="_blank">Documentación Oficial de Git</a></li>
+                <li><a href="https://www.atlassian.com/git" target="_blank">Guía de Git de Atlassian</a></li>
+                <li><a href="https://www.gitbook.com/book/git/git-user-manual" target="_blank">Manual de Usuario de Git en GitBook</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Blog de Desarrollo Front-End. Todos los derechos reservados.AleCanache</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
